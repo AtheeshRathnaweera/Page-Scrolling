@@ -1,0 +1,57 @@
+.section {
+    height: 100vh;
+    text-align: center;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.heading {
+    color: white;
+    font-style: italic;
+
+}
+
+/*
+html {
+  scroll-behavior: auto;
+}
+*/
+
+.sections-dots {
+    position: fixed;
+    z-index: 10;
+    width: 4%;
+    top: 45%;
+    left: 95%;
+    margin-right: 5%;
+    
+}
+
+.dot-holder{
+    width:100%;
+    text-align: center;
+}
+
+.dot {
+    cursor: pointer;
+    height: 4px;
+    width: 4px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.1s linear;
+    transition: width 0.1s ease-in,height 0.1s ease-in;
+    
+}
+
+.active,
+.dot:hover {
+    background-color: whitesmoke;
+    height: 12px;
+    width: 12px;
+    transition: width 0.1s ease-out,height 0.1s ease-out;
+}
