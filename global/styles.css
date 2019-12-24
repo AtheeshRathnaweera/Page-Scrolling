@@ -14,6 +14,45 @@ body {
 
 }
 
+.left-arrow {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    height: 50px;
+    width: 50px;
+    transform: rotate(135deg);
+    position: fixed;
+    z-index: 10;
+    top: 47%;
+    right: 90vw;
+    margin-left: 10%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-bottom 0.1s ease-in, border-right 0.1s ease-in;
+}
+
+.right-arrow {
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    position: fixed;
+    z-index: 10;
+    top: 47%;
+    left: 90vw;
+    background-color: transparent;
+    cursor: pointer;
+    transition: border-bottom 0.1s ease-in, border-right 0.1s ease-in;
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    height: 53px;
+    width: 53px;
+}
+
 /*
 html {
   scroll-behavior: auto;
@@ -24,14 +63,14 @@ html {
     position: fixed;
     z-index: 10;
     width: 4%;
-    top: 45%;
+    top: 44%;
     left: 95%;
     margin-right: 5%;
-    
+
 }
 
-.dot-holder{
-    width:100%;
+.dot-holder {
+    width: 100%;
     text-align: center;
 }
 
@@ -44,8 +83,8 @@ html {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.1s linear;
-    transition: width 0.1s ease-in,height 0.1s ease-in;
-    
+    transition: width 0.1s ease-in, height 0.1s ease-in;
+
 }
 
 .active,
@@ -53,5 +92,19 @@ html {
     background-color: whitesmoke;
     height: 12px;
     width: 12px;
-    transition: width 0.1s ease-out,height 0.1s ease-out;
+    transition: width 0.1s ease-out, height 0.1s ease-out;
+}
+
+/*Slides*/
+.slides-holder {
+    display: block;
+}
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    transition: display 0.5s ease-out;
+
 }
